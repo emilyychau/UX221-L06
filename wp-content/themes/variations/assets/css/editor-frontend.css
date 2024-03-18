@@ -1,0 +1,71 @@
+/**
+ * This file contains styles for the editor and frontend
+ *
+ * @package Variations
+ *
+ */
+
+/*
+ * Common rules.
+ */
+
+.wp-site-blocks>*+* {
+    margin-block-start: 0 !important;
+}
+
+/* .has-background padding:unset */
+body .has-background {
+    padding: unset;
+}
+
+.entry-content {
+    padding-top: var(--wp--preset--spacing--50);
+    padding-bottom: var(--wp--preset--spacing--50);
+}
+
+/*
+ * Page templates customization.
+ */
+
+/* Prepare the page for cover block */
+body header.wp-block-template-part:has(+ div .wp-block-cover:first-child) .is-position-sticky,
+body header.wp-block-template-part:has(+ .wp-block-cover) .is-position-sticky {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+body header.wp-block-template-part:has(+ div .wp-block-cover:first-child)+.entry-content,
+body header.wp-block-template-part:has(+ .wp-block-cover)+.entry-content {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+@media (max-width: 600.5px) {
+
+    body.admin-bar header.wp-block-template-part:has(+ div .wp-block-cover:first-child) .is-position-sticky,
+    body.admin-bar header.wp-block-template-part:has(+ .wp-block-cover) .is-position-sticky {
+        top: var(--wp--preset--spacing--50);
+    }
+}
+
+/* Page (Regular) template. Remove spacing below title */
+body main:has(.wp-block-post-title) .entry-content {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+/*
+ * Post templates customization.
+ */
+.variations-posts-grid li>div {
+    height: 100%;
+}
+
+/*
+ * Site Title underline bug fix.
+ */
+.wp-block-heading[style*="text-decoration:none"] a,
+.wp-block-heading[style*="text-decoration: none"] a {
+    text-decoration: none !important;
+}

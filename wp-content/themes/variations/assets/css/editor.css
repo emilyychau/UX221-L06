@@ -1,0 +1,26 @@
+/**
+ * This file contains styles for the editor.
+ *
+ * @package Variations
+ *
+ */
+
+/*
+ * Initialization of Page template.
+ */
+.editor-styles-wrapper .block-editor-block-list__layout > p {
+    max-width: var(--wp--style--global--content-size);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+header .is-position-sticky {
+    background-color: rgba(245, 245, 245, 0.387);
+}
+header.is-selected .is-position-sticky,
+header.has-child-selected .is-position-sticky {
+    background-color: rgb(128 128 128 / 13%);
+}
+
+/* header:hover {
+    background-color: rgb(255, 255, 255);
+} */
