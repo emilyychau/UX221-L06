@@ -1,0 +1,49 @@
+<wpml-config>
+    <admin-texts>
+        <key name="single_names">
+            <key name="*"/>
+        </key>
+        <key name="archive_names">
+            <key name="*"/>
+        </key>
+        <key name="archive_multiple_settings">
+            <key name="seo_title"/>
+            <key name="breadcrumbs_title"/>
+            <key name="catalog_plural"/>
+        </key>
+        <key name="product_attribute">
+            <key name="*"/>
+        </key>
+        <key name="product_attribute_label">
+            <key name="*"/>
+        </key>
+        <key name="product_attribute_unit">
+            <key name="*"/>
+        </key>
+        <key name="product_shipping_cost">
+            <key name="*"/>
+        </key>
+        <key name="product_shipping_label">
+            <key name="*"/>
+        </key>
+        <key name="product_currency_settings">
+            <key name="custom_symbol"/>
+        </key>
+    </admin-texts>
+    <taxonomies>
+        <taxonomy translate="0">al_product-attributes</taxonomy>
+    </taxonomies>
+    <custom-fields>
+        <custom-field action="copy">_price</custom-field>
+        <custom-field action="copy">_sku</custom-field>
+        <custom-field action="copy">_mpn</custom-field>
+        <custom-field action="copy">_weight</custom-field>
+        <custom-field action="copy">_size_length</custom-field>
+        <custom-field action="copy">_size_width</custom-field>
+        <custom-field action="copy">_size_height</custom-field>
+        <custom-field action="copy">_inventory</custom-field>
+        <custom-field action="copy">_ic_hidden_product_data</custom-field>
+    </custom-fields>
+</wpml-config>
+
+

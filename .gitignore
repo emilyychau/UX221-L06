@@ -1,0 +1,8 @@
+
+*
+!wp-content
+!wp-content/**
+!package.json
+!README.md
+!.gitignore
+!LICENSE
